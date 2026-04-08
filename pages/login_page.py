@@ -20,3 +20,4 @@ class LoginPage:
         self.login_input.fill(username)
         self.password_input.fill(password)
         self.login_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
